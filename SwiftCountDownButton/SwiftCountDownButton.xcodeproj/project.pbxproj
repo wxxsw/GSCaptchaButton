@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		185412041B205E2C009CF3D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185412031B205E2C009CF3D2 /* AppDelegate.swift */; };
+		185412061B205E2C009CF3D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185412051B205E2C009CF3D2 /* ViewController.swift */; };
+		185412091B205E2C009CF3D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185412071B205E2C009CF3D2 /* Main.storyboard */; };
+		1854120B1B205E2C009CF3D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1854120A1B205E2C009CF3D2 /* Images.xcassets */; };
+		1854120E1B205E2C009CF3D2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1854120C1B205E2C009CF3D2 /* LaunchScreen.xib */; };
+		1854121A1B205E2D009CF3D2 /* SwiftCountDownButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185412191B205E2D009CF3D2 /* SwiftCountDownButtonTests.swift */; };
+		185412251B205E4B009CF3D2 /* SwiftCaptchaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185412241B205E4B009CF3D2 /* SwiftCaptchaButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		185412141B205E2D009CF3D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 185411F61B205E2C009CF3D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 185411FD1B205E2C009CF3D2;
+			remoteInfo = SwiftCountDownButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		185411FE1B205E2C009CF3D2 /* SwiftCountDownButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCountDownButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		185412021B205E2C009CF3D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		185412031B205E2C009CF3D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		185412051B205E2C009CF3D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		185412081B205E2C009CF3D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1854120A1B205E2C009CF3D2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1854120D1B205E2C009CF3D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		185412131B205E2D009CF3D2 /* SwiftCountDownButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCountDownButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		185412181B205E2D009CF3D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		185412191B205E2D009CF3D2 /* SwiftCountDownButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCountDownButtonTests.swift; sourceTree = "<group>"; };
+		185412241B205E4B009CF3D2 /* SwiftCaptchaButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftCaptchaButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		185411FB1B205E2C009CF3D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		185412101B205E2D009CF3D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		185411F51B205E2C009CF3D2 = {
+			isa = PBXGroup;
+			children = (
+				185412231B205E4B009CF3D2 /* Source */,
+				185412001B205E2C009CF3D2 /* SwiftCountDownButton */,
+				185412161B205E2D009CF3D2 /* SwiftCountDownButtonTests */,
+				185411FF1B205E2C009CF3D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		185411FF1B205E2C009CF3D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				185411FE1B205E2C009CF3D2 /* SwiftCountDownButton.app */,
+				185412131B205E2D009CF3D2 /* SwiftCountDownButtonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		185412001B205E2C009CF3D2 /* SwiftCountDownButton */ = {
+			isa = PBXGroup;
+			children = (
+				185412031B205E2C009CF3D2 /* AppDelegate.swift */,
+				185412051B205E2C009CF3D2 /* ViewController.swift */,
+				185412071B205E2C009CF3D2 /* Main.storyboard */,
+				1854120A1B205E2C009CF3D2 /* Images.xcassets */,
+				1854120C1B205E2C009CF3D2 /* LaunchScreen.xib */,
+				185412011B205E2C009CF3D2 /* Supporting Files */,
+			);
+			path = SwiftCountDownButton;
+			sourceTree = "<group>";
+		};
+		185412011B205E2C009CF3D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				185412021B205E2C009CF3D2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		185412161B205E2D009CF3D2 /* SwiftCountDownButtonTests */ = {
+			isa = PBXGroup;
+			children = (
+				185412191B205E2D009CF3D2 /* SwiftCountDownButtonTests.swift */,
+				185412171B205E2D009CF3D2 /* Supporting Files */,
+			);
+			path = SwiftCountDownButtonTests;
+			sourceTree = "<group>";
+		};
+		185412171B205E2D009CF3D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				185412181B205E2D009CF3D2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		185412231B205E4B009CF3D2 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				185412241B205E4B009CF3D2 /* SwiftCaptchaButton.swift */,
+			);
+			name = Source;
+			path = ../Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		185411FD1B205E2C009CF3D2 /* SwiftCountDownButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1854121D1B205E2D009CF3D2 /* Build configuration list for PBXNativeTarget "SwiftCountDownButton" */;
+			buildPhases = (
+				185411FA1B205E2C009CF3D2 /* Sources */,
+				185411FB1B205E2C009CF3D2 /* Frameworks */,
+				185411FC1B205E2C009CF3D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftCountDownButton;
+			productName = SwiftCountDownButton;
+			productReference = 185411FE1B205E2C009CF3D2 /* SwiftCountDownButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		185412121B205E2D009CF3D2 /* SwiftCountDownButtonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 185412201B205E2D009CF3D2 /* Build configuration list for PBXNativeTarget "SwiftCountDownButtonTests" */;
+			buildPhases = (
+				1854120F1B205E2D009CF3D2 /* Sources */,
+				185412101B205E2D009CF3D2 /* Frameworks */,
+				185412111B205E2D009CF3D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				185412151B205E2D009CF3D2 /* PBXTargetDependency */,
+			);
+			name = SwiftCountDownButtonTests;
+			productName = SwiftCountDownButtonTests;
+			productReference = 185412131B205E2D009CF3D2 /* SwiftCountDownButtonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		185411F61B205E2C009CF3D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Gesen;
+				TargetAttributes = {
+					185411FD1B205E2C009CF3D2 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					185412121B205E2D009CF3D2 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 185411FD1B205E2C009CF3D2;
+					};
+				};
+			};
+			buildConfigurationList = 185411F91B205E2C009CF3D2 /* Build configuration list for PBXProject "SwiftCountDownButton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 185411F51B205E2C009CF3D2;
+			productRefGroup = 185411FF1B205E2C009CF3D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				185411FD1B205E2C009CF3D2 /* SwiftCountDownButton */,
+				185412121B205E2D009CF3D2 /* SwiftCountDownButtonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		185411FC1B205E2C009CF3D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185412091B205E2C009CF3D2 /* Main.storyboard in Resources */,
+				1854120E1B205E2C009CF3D2 /* LaunchScreen.xib in Resources */,
+				1854120B1B205E2C009CF3D2 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		185412111B205E2D009CF3D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		185411FA1B205E2C009CF3D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				185412061B205E2C009CF3D2 /* ViewController.swift in Sources */,
+				185412041B205E2C009CF3D2 /* AppDelegate.swift in Sources */,
+				185412251B205E4B009CF3D2 /* SwiftCaptchaButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1854120F1B205E2D009CF3D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1854121A1B205E2D009CF3D2 /* SwiftCountDownButtonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		185412151B205E2D009CF3D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 185411FD1B205E2C009CF3D2 /* SwiftCountDownButton */;
+			targetProxy = 185412141B205E2D009CF3D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		185412071B205E2C009CF3D2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				185412081B205E2C009CF3D2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1854120C1B205E2C009CF3D2 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1854120D1B205E2C009CF3D2 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1854121B1B205E2D009CF3D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1854121C1B205E2D009CF3D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1854121E1B205E2D009CF3D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SwiftCountDownButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1854121F1B205E2D009CF3D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SwiftCountDownButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		185412211B205E2D009CF3D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftCountDownButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftCountDownButton.app/SwiftCountDownButton";
+			};
+			name = Debug;
+		};
+		185412221B205E2D009CF3D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwiftCountDownButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftCountDownButton.app/SwiftCountDownButton";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		185411F91B205E2C009CF3D2 /* Build configuration list for PBXProject "SwiftCountDownButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1854121B1B205E2D009CF3D2 /* Debug */,
+				1854121C1B205E2D009CF3D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1854121D1B205E2D009CF3D2 /* Build configuration list for PBXNativeTarget "SwiftCountDownButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1854121E1B205E2D009CF3D2 /* Debug */,
+				1854121F1B205E2D009CF3D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		185412201B205E2D009CF3D2 /* Build configuration list for PBXNativeTarget "SwiftCountDownButtonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				185412211B205E2D009CF3D2 /* Debug */,
+				185412221B205E2D009CF3D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 185411F61B205E2C009CF3D2 /* Project object */;
+}
