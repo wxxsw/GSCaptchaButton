@@ -15,9 +15,16 @@ countdownBtn.setTitle("正在获取验证码：second秒", forState: .Disabled)
 // countdownBtn.setTitle("second秒后重试", forState: .Disabled)
 // countdownBtn.setTitle("(second)重新获取", forState: .Disabled)
 ```
-* 执行倒计时
+* 开始倒计时
 ```swift
 countdownBtn.maxSecond = 30 // 默认为60
-countdownBtn.startCount()   // 开始倒计时
-// countdownBtn.stopCount() // 停止倒计时
+countdownBtn.countdown = true
+```
+* 结束倒计时
+```swift
+countdownBtn.countdown = false
+```
+* 判断是否处于倒计时状态
+```swift
+countdownBtn.countdown  // return Bool
 ```
