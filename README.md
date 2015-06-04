@@ -6,8 +6,9 @@
 * 自定义文字
 
 ## 使用方法
-* 将UIButton改为SwiftCountdownButton
-* 设置你想要的默认文字和倒计时文字
+1.  将SwiftCoundownButton.swift文件拖入你的项目 
+2.  将你使用的UIButton类改为SwiftCountdownButton
+3.  设置你想要的默认文字和倒计时文字
 ```swift
 countdownBtn.setTitle("获取验证码", forState: .Normal)
 countdownBtn.setTitle("正在获取验证码：second秒", forState: .Disabled) 
