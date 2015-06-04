@@ -13,6 +13,13 @@ class SwiftCountdownButton: UIButton {
     // MARK: Properties
     
     var maxSecond = 60
+    var countdown = false {
+        didSet {
+            if oldValue != countdown {
+                countdown ? startCountdown() : stopCountdown()
+            }
+        }
+    }
     
     private var second = 0
     private var timer: NSTimer?
@@ -31,7 +38,7 @@ class SwiftCountdownButton: UIButton {
     }
     
     deinit {
-        stopCount()
+        countdown = false
     }
     
     // MARK: Setups
@@ -45,15 +52,14 @@ class SwiftCountdownButton: UIButton {
         setTitle("", forState: .Disabled)
         timeLabel = UILabel(frame: bounds)
         timeLabel.textAlignment = .Center
-        timeLabel.text = normalText
         timeLabel.font = titleLabel?.font
-        timeLabel.textColor = normalTextColor
+        updateNormal()
         addSubview(timeLabel)
     }
     
-    // MARK: Functions
+    // MARK: Private
     
-    func startCount() {
+    private func startCountdown() {
         second = maxSecond
         updateDisabled()
         
@@ -62,24 +68,14 @@ class SwiftCountdownButton: UIButton {
             timer = nil
         }
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateTime", userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateCountdown", userInfo: nil, repeats: true)
     }
     
-    func stopCount() {
+    private func stopCountdown() {
         timer?.invalidate()
         timer = nil
         updateNormal()
     }
-    
-    @objc func updateTime() {
-        if --second <= 0 {
-            stopCount()
-        } else {
-            updateDisabled()
-        }
-    }
-    
-    // MARK: Private
     
     private func updateNormal() {
         enabled = true
@@ -91,6 +87,14 @@ class SwiftCountdownButton: UIButton {
         enabled = false
         timeLabel.textColor = disabledTextColor
         timeLabel.text = disabledText.stringByReplacingOccurrencesOfString("second", withString: "\(second)", options: .LiteralSearch, range: nil)
+    }
+    
+    @objc private func updateCountdown() {
+        if --second <= 0 {
+            countdown = false
+        } else {
+            updateDisabled()
+        }
     }
 
 }

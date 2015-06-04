@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     
     @IBAction func tapCountdown(sender: AnyObject) {
         countdownBtn.maxSecond = 30
-        countdownBtn.startCount()
+        countdownBtn.countdown = true
     }
 
 }
