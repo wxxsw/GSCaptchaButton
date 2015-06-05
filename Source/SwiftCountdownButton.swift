@@ -53,7 +53,8 @@ class SwiftCountdownButton: UIButton {
         timeLabel = UILabel(frame: bounds)
         timeLabel.textAlignment = .Center
         timeLabel.font = titleLabel?.font
-        updateNormal()
+        timeLabel.textColor = normalTextColor
+        timeLabel.text = normalText
         addSubview(timeLabel)
     }
     
