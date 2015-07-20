@@ -1,14 +1,12 @@
 # SwiftCountdownButton
 
 ## 功能
-* 开始倒计时并禁用按钮
+* 开始倒计时自动禁用按钮
 * 结束倒计时
 * 自定义文字
 
 ## 使用方法
-1.  将SwiftCoundownButton.swift文件拖入你的项目 
-2.  将你使用的UIButton类改为SwiftCountdownButton
-3.  设置你想要的默认文字和倒计时文字
+
 ```swift
 countdownBtn.setTitle("获取验证码", forState: .Normal)
 countdownBtn.setTitle("正在获取验证码：second秒", forState: .Disabled) 
@@ -29,3 +27,7 @@ countdownBtn.countdown = false
 ```swift
 countdownBtn.countdown  // return Bool
 ```
+
+## 安装
+1.  将SwiftCoundownButton.swift文件拖入你的项目 
+2.  使用SwiftCountdownButton替代UIButton
