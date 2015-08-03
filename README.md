@@ -32,3 +32,6 @@ countdownBtn.countdown  // return Bool
 ## 安装
 1.  将SwiftCoundownButton.swift文件拖入你的项目 
 2.  使用SwiftCountdownButton替代UIButton
+
+## TODO
+1. 使用扩展代替继承
