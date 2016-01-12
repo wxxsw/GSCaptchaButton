@@ -168,6 +168,7 @@
 		185412271B206035009CF3D2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = Gesen;
 				TargetAttributes = {
@@ -422,6 +423,7 @@
 				185412501B206035009CF3D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		185412511B206035009CF3D2 /* Build configuration list for PBXNativeTarget "SwiftCountdownButtonDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +432,7 @@
 				185412531B206035009CF3D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
