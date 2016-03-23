@@ -69,7 +69,7 @@ class SwiftCountdownButton: UIButton {
             timer = nil
         }
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateCountdown", userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(updateCountdown), userInfo: nil, repeats: true)
     }
     
     private func stopCountdown() {
@@ -91,7 +91,8 @@ class SwiftCountdownButton: UIButton {
     }
     
     @objc private func updateCountdown() {
-        if --second <= 0 {
+        second -= 1
+        if second <= 0 {
             countdown = false
         } else {
             updateDisabled()
