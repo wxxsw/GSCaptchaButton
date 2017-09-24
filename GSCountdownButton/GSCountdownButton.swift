@@ -1,6 +1,6 @@
 //
-//  SwiftCountdownButton.swift
-//  SwiftCountdownButtonExample
+//  GSCountdownButton.swift
+//  GSCountdownButton
 //
 //  Created by Gesen on 15/6/4.
 //  Copyright (c) 2015年 Gesen. All rights reserved.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SwiftCountdownButton: UIButton {
+class GSCountdownButton: UIButton {
 
     // MARK: Properties
     
@@ -22,7 +22,7 @@ class SwiftCountdownButton: UIButton {
     }
     
     private var second = 0
-    private var timer: NSTimer?
+    private var timer: Timer?
     
     private var timeLabel: UILabel!
     private var normalText: String!
@@ -44,14 +44,14 @@ class SwiftCountdownButton: UIButton {
     // MARK: Setups
     
     private func setupLabel() {
-        normalText = titleForState(.Normal)!
-        disabledText = titleForState(.Disabled)!
-        normalTextColor = titleColorForState(.Normal)!
-        disabledTextColor = titleColorForState(.Disabled)!
-        setTitle("", forState: .Normal)
-        setTitle("", forState: .Disabled)
+        normalText = title(for: .normal) ?? ""
+        disabledText = title(for: .disabled) ?? ""
+        normalTextColor = titleColor(for: .normal) ?? .white
+        disabledTextColor = titleColor(for: .disabled) ?? .white
+        setTitle("", for: .normal)
+        setTitle("", for: .disabled)
         timeLabel = UILabel(frame: bounds)
-        timeLabel.textAlignment = .Center
+        timeLabel.textAlignment = .center
         timeLabel.font = titleLabel?.font
         timeLabel.textColor = normalTextColor
         timeLabel.text = normalText
@@ -69,7 +69,7 @@ class SwiftCountdownButton: UIButton {
             timer = nil
         }
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(updateCountdown), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCountdown), userInfo: nil, repeats: true)
     }
     
     private func stopCountdown() {
@@ -79,15 +79,15 @@ class SwiftCountdownButton: UIButton {
     }
     
     private func updateNormal() {
-        enabled = true
+        isEnabled = true
         timeLabel.textColor = normalTextColor
         timeLabel.text = normalText
     }
     
     private func updateDisabled() {
-        enabled = false
+        isEnabled = false
         timeLabel.textColor = disabledTextColor
-        timeLabel.text = disabledText.stringByReplacingOccurrencesOfString("second", withString: "\(second)", options: .LiteralSearch, range: nil)
+        timeLabel.text = disabledText.replacingOccurrences(of: "second", with: "\(second)")
     }
     
     @objc private func updateCountdown() {

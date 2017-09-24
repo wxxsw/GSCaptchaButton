@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:SwiftCountdownButtonDemo.xcodeproj">
+      location = "self:GSCountdownButtonExample.xcodeproj">
    </FileRef>
 </Workspace>

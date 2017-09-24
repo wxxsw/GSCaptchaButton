@@ -1,4 +1,4 @@
-# SwiftCountdownButton
+# GSCountdownButton
 
 ## 功能
 * 倒计时
@@ -6,6 +6,8 @@
 * 自定义文字
 
 ## 使用方法
+
+无论是自定义控件还是 xib，将继承自 UIButton 改为 GSCountdownButton
 
 ```swift
 countdownBtn.setTitle("获取验证码", forState: .Normal)
@@ -29,9 +31,21 @@ countdownBtn.countdown = false
 countdownBtn.countdown  // return Bool
 ```
 
-## 安装
-1.  将SwiftCoundownButton.swift文件拖入你的项目 
-2.  使用SwiftCountdownButton替代UIButton
+## 要求
 
-## TODO
-1. 使用扩展代替继承
+### Master
+
+- iOS 8.0+
+- Xcode 9 (Swift 4)
+
+
+## 安装
+
+### [CocoaPods](http://cocoapods.org/):
+
+在 `Podfile` 中增加:
+`pod "GSCountdownButton"`
+
+### 手动
+将 `GSCoundownButton.swift` 文件拖入你的项目 
+
