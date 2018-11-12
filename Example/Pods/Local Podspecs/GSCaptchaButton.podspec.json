@@ -1,0 +1,19 @@
+{
+  "name": "GSCaptchaButton",
+  "version": "0.1.0",
+  "summary": "验证码按钮",
+  "homepage": "https://github.com/wxxsw/GSCaptchaButton",
+  "license": "MIT",
+  "authors": {
+    "Gesen": "i@gesen.me"
+  },
+  "source": {
+    "git": "https://github.com/wxxsw/GSCaptchaButton.git",
+    "tag": "#{s.version}"
+  },
+  "source_files": "GSCaptchaButton/Classes/**/*",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "swift_version": "4.2"
+}

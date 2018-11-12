@@ -1,0 +1,5 @@
+use_frameworks!
+
+target 'GSCaptchaButton_Example' do
+  pod 'GSCaptchaButton', :path => '../'
+end

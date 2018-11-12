@@ -1,0 +1,16 @@
+PODS:
+  - GSCaptchaButton (0.1.0)
+
+DEPENDENCIES:
+  - GSCaptchaButton (from `../`)
+
+EXTERNAL SOURCES:
+  GSCaptchaButton:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GSCaptchaButton: 1aa750cb558ac4e22729127cd737bd2df5ba60a9
+
+PODFILE CHECKSUM: 445d83cddb9d7cd5d85d81c4db3d1783580c665e
+
+COCOAPODS: 1.6.0.beta.2

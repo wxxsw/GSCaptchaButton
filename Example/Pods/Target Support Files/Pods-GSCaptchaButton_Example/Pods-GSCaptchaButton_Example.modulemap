@@ -1,0 +1,6 @@
+framework module Pods_GSCaptchaButton_Example {
+  umbrella header "Pods-GSCaptchaButton_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="GSCaptchaButton_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="CYF-5a-Oqj">
+                                <rect key="frame" x="141" y="278" width="92" height="110"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="b3u-s5-Wud">
+                                        <rect key="frame" x="0.0" y="0.0" width="92" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zi0-aC-3E4">
+                                                <rect key="frame" x="0.0" y="0.0" width="31" height="30"/>
+                                                <state key="normal" title="开始"/>
+                                                <connections>
+                                                    <action selector="tapStart:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ukq-Il-CKh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpD-UO-yzP">
+                                                <rect key="frame" x="61" y="0.0" width="31" height="30"/>
+                                                <state key="normal" title="停止"/>
+                                                <connections>
+                                                    <action selector="tapStop:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9Ah-LR-Yy6"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRX-gS-LRS" customClass="GSCaptchaButton" customModule="GSCaptchaButton">
+                                        <rect key="frame" x="0.0" y="80" width="92" height="30"/>
+                                        <state key="normal" title="获取验证码"/>
+                                        <state key="disabled" title="second s"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CYF-5a-Oqj" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="IB5-zW-xJg"/>
+                            <constraint firstItem="CYF-5a-Oqj" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="x65-no-7Op"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="WRX-gS-LRS" id="0tr-gT-4HL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
