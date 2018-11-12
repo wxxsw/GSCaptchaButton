@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
     s.license      = 'MIT'
     
     s.author       = { 'Gesen' => 'i@gesen.me' }
-    s.source       = { :git => 'https://github.com/wxxsw/GSCaptchaButton.git', :tag => '#{s.version}' }
+    s.source       = { :git => 'https://github.com/wxxsw/GSCaptchaButton.git', :tag => s.version.to_s }
     
     s.source_files = 'GSCaptchaButton/Classes/**/*'
     
