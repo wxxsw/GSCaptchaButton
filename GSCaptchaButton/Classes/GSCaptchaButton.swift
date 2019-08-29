@@ -24,18 +24,13 @@ public class GSCaptchaButton: UIButton {
     private var second = 0
     private var timer: Timer?
     
-    private var timeLabel: UILabel!
+    private var timeLabel = UILabel()
     private var normalText: String!
     private var normalTextColor: UIColor!
     private var disabledText: String!
     private var disabledTextColor: UIColor!
     
     // MARK: Life Cycle
-    
-    override public func awakeFromNib() {
-        super.awakeFromNib()
-        setupLabel()
-    }
     
     deinit {
         countdown = false
@@ -44,13 +39,16 @@ public class GSCaptchaButton: UIButton {
     // MARK: Setups
     
     private func setupLabel() {
+        guard timeLabel.superview == nil else { return }
+        
         normalText = title(for: .normal) ?? ""
         disabledText = title(for: .disabled) ?? ""
         normalTextColor = titleColor(for: .normal) ?? .white
         disabledTextColor = titleColor(for: .disabled) ?? .white
         setTitle("", for: .normal)
         setTitle("", for: .disabled)
-        timeLabel = UILabel(frame: bounds)
+        timeLabel.frame = bounds
+        timeLabel.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         timeLabel.textAlignment = .center
         timeLabel.font = titleLabel?.font
         timeLabel.textColor = normalTextColor
@@ -61,6 +59,7 @@ public class GSCaptchaButton: UIButton {
     // MARK: Private
     
     private func startCountdown() {
+        setupLabel()
         second = maxSecond
         updateDisabled()
         
