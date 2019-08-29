@@ -36,8 +36,7 @@ captchaBtn.countdown  // return Bool
 ### Master
 
 - iOS 8.0+
-- Xcode 10 (Swift 4.2)
-
+- Xcode 10 (Swift 4.2 - 5.0)
 
 ## 安装
 
